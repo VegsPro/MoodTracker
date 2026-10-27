@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Цвета настроения</string>
+    <string name="reminder_title">Как прошёл день?</string>
+    <string name="reminder_text">Заполни своё настроение за сегодня 🎨</string>
+    <string name="channel_name">Напоминания о настроении</string>
+    <string name="channel_description">Ежедневное напоминание заполнить настроение</string>
+</resources>
