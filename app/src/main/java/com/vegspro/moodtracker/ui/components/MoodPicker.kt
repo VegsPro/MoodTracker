@@ -1,5 +1,6 @@
 package com.vegspro.moodtracker.ui.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -65,14 +66,14 @@ fun MoodPickerDialog(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(vertical = 6.dp),
+                            .clickable { onMoodSelected(mood) }
+                            .padding(vertical = 8.dp, horizontal = 4.dp),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         MoodSquare(
                             mood = mood,
                             size = 28.dp,
-                            selected = currentMood == mood,
-                            onClick = { onMoodSelected(mood) }
+                            selected = currentMood == mood
                         )
                         Spacer(modifier = Modifier.width(12.dp))
                         Text(
